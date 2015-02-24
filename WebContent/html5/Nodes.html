@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- <script type="text/javascript">
+
+function checkNodetype()
+{
+	var nodes =  documents.body.childNodes;
+	
+	for(var i=0; i<nodes.lenght; i++)
+	alert(nodes[i].nodeType);
+}	
+document.body.childNodes[0].value="hello";
+
+</script> -->
+</head>
+<body>
+<script>
+/* function init()
+{
+	var img1 = document.getElementById("img1");
+	img1.src="btn-list.png";
+} */
+function init()
+{
+	var img1 = document.getElementById("btn-s");
+	img1.onclick=changeImage;
+}
+function changeImage()
+{
+	var img1 = document.getElementById("img1");
+	var txt1 = document.getElementById("txt1");
+	var style1 = document.getElementById("style1");
+	img1.src = txt1.value;	//html 속성값
+	//img1.style.border="10px solid #0000ff";
+	img1.style.borderWidth = style1.value;	//style 속성값 
+	
+}
+
+
+window.onload=init;
+
+</script>
+<form><input id=txt1 />
+<input type="button" value="변경" id="btn-s"/>
+<img id="img1" src="btn-list.png" style="border:5px solid #ff0000;"/>
+
+</form>
+<input id=style1 />
+
+</body>
+</html>

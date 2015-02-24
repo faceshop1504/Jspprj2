@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="countdown.js" type="text/javascript" >
+/* alert("Hello Javascript")
+var x;
+alert(x == undefined) */
+
+/* var lottos = [5,[2, 3], "Hello", 10, 21];
+alert(typeof lottos[1][1]); */
+
+
+//연산자
+/* alert(3.5-"2") */    
+ 
+ 
+//연산자
+//alert(32>"4")
+ 
+/*  var x =3;
+ document.write(x); */
+ /* var x, y;
+ x = prompt("x 값을 입력하세요", 0);
+ y = prompt("y 값을 입력하세요", 0);
+ x = parseInt(x);
+ y = parseInt(y);
+ alert(x+y); */
+ 
+ /* var ar = ["철수","영희","맹구","동천"];        for 반복문
+ alert(ar); */
+ 
+/*  for(i in ar)            for-in 반복문
+	 alert([i]);
+  */
+ /* var record = {kor:30, eng:50, math:60};
+ 
+ for(var k in record)
+	 alert(record[k]);
+  */
+  
+  
+ /*  function add(a,b)
+  {
+	  return a+b;
+  }
+  alert(add); */
+	
+	/* var add = function(a,b)          //function 객체
+  	{
+	  	return a+b;
+  	}
+  
+ 		alert(add(3,4)); */
+ 		
+ 		
+/* function add(a,b)
+	{
+ 			/* var k=0;
+ 			for(var k in arguments[i])
+ 				alert(arguments.length)  //매개변수가 몇개인가!! length를 통해 알수 있다. */
+ 			//return arguments[0]+arguments[1];
+	//}
+ 		//var sum = add(2,3,"hello",3,4,5,6,7,87);
+ 		//alert(sum);
+ 		
+ 		/* function printResult()
+ 		{
+ 			var x,y;
+ 			x=prompt("x값 넣어봐", 0);
+ 			y=prompt("y값 넣어봐", 0);
+ 			x=parseInt(x);
+ 			y=parseInt(y);
+ 			alert(x+y);
+ 			
+ 		} */
+ 		
+ 		/* function printResult()
+ 		{
+ 			var x,y;
+ 			x=prompt("x값 넣어봐", 0);
+ 			y=prompt("y값 넣어봐", 0);
+ 			x=parseInt(x);
+ 			y=parseInt(y);
+ 			//alert(x+y);
+ 			
+ 			btnPrint.value=x+y;
+ 			
+ 			
+ 		} */
+ 		
+</script>
+</head>
+<body>
+<!-- <input type="button" value="출력" onclick="alert(sum)"/> -->
+<!-- <input type="button" value="출력" onclick="printResult();" /> -->
+<!-- <input type="button" value="출력" onclick="printResult();" id="btnPrint" /> -->
+<!-- <input type="button" value="출력" id="btn-print" /> -->
+<p>
+남은시간 <span id="lbl-count">60</span>초
+<input id="btn-countdown" type="button" value="카운트 시작" />
+</p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+<script>
+function textCode() {
+		var txt = document.createTextNode("안녕하세요");
+		var div1 = document.getElementById("div1");
+		div1.appendChild(txt);
+
+	}
+	function imageChange()
+	{
+		var img1 = document.createElement("img");
+		var div1 = document.getElementById("div1");
+		img1.src="3.png";
+		div1.appendChild(img1);
+	}
+	function textDelete()
+	{
+		var div1=document.getElementById("div1");
+		var txt = div1.lastChild;
+		div1.removeChild(txt);
+		
+	}
+	function elementB()
+	{
+		var div1 = document.getElementById("div1");
+		var clone1 = div1.cloneNode(true);
+		var target = document.body;
+		target.appendChild(clone1);
+	}
+	function init() {
+		
+		var div1 = document.getElementById("text");
+		var img1 = document.getElementById("imgp");
+		var textDel= document.getElementById("text-del");
+		var elementC = document.getElementById("element")
+		div1.onclick = textCode;
+		img1.onclick = imageChange;
+		textDel.onclick = textDelete; 
+		elementC.onclick = elementB;
+		
+	}
+	window.onload = init;
+	
+	
+</script>
+	<div id="div1">
+		<font></font> <input />
+	</div>
+	<p>
+		<input type="button" value="텍스트추가 " id="text" />
+		<input type="button" value="엘리먼트추가 " id="imgp" />
+		<input type="button" value="텍스트삭제" id="text-del" />
+		<input type="button" value=" 엘리먼트복제" id="element" />
+		</p>
+		
+		
+</body>
+</html>
